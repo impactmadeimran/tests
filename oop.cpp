@@ -1,15 +1,18 @@
 #include <iostream>
 using namespace std;
 
-struct animals{
-   string name;
-    int age;
-    string breed;
+class car{
+    public:
+   void honk();
 };
+
+void car::honk(){
+    cout<<"hello world!";
+}
+
 int main()
 {
-    animals type;
-    type.age = 2;
-
-    cout<<type.age;
+    car myobj;
+    myobj.honk();
+    return 0;
 }
